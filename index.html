@@ -11,8 +11,9 @@
             --bg-color: #ecf0f1;
             --text-color: #2c3e50;
             --taskbar-color: rgba(52, 152, 219, 0.9);
-            --window-color: #ffffff;
+            --window-color: rgba(255, 255, 255, 0.85);
             --shadow-color: rgba(0, 0, 0, 0.2);
+            --blur-amount: 5px;
         }
       
         /* Темы */
@@ -22,7 +23,7 @@
             --bg-color: #ecf0f1;
             --text-color: #2c3e50;
             --taskbar-color: rgba(52, 152, 219, 0.9);
-            --window-color: #ffffff;
+            --window-color: rgba(255, 255, 255, 0.85);
         }
 
         .theme-dark {
@@ -31,7 +32,7 @@
             --bg-color: #2c3e50;
             --text-color: #ecf0f1;
             --taskbar-color: rgba(44, 62, 80, 0.9);
-            --window-color: #34495e;
+            --window-color: rgba(52, 73, 94, 0.85);
         }
 
         .theme-light {
@@ -40,7 +41,7 @@
             --bg-color: #f5f6fa;
             --text-color: #2f3640;
             --taskbar-color: rgba(26, 188, 156, 0.9);
-            --window-color: #ffffff;
+            --window-color: rgba(255, 255, 255, 0.9);
         }
 
         .theme-sunset {
@@ -49,7 +50,7 @@
             --bg-color: #f39c12;
             --text-color: #2c3e50;
             --taskbar-color: rgba(231, 76, 60, 0.9);
-            --window-color: #f1c40f;
+            --window-color: rgba(241, 196, 15, 0.85);
         }
 
         .theme-ocean {
@@ -58,7 +59,7 @@
             --bg-color: #1abc9c;
             --text-color: #ecf0f1;
             --taskbar-color: rgba(22, 160, 133, 0.9);
-            --window-color: #16a085;
+            --window-color: rgba(22, 160, 133, 0.85);
         }
 
         .theme-forest {
@@ -67,7 +68,7 @@
             --bg-color: #16a085;
             --text-color: #ecf0f1;
             --taskbar-color: rgba(39, 174, 96, 0.9);
-            --window-color: #27ae60;
+            --window-color: rgba(39, 174, 96, 0.85);
         }
 
         .theme-night {
@@ -76,7 +77,7 @@
             --bg-color: #1a1a1a;
             --text-color: #ecf0f1;
             --taskbar-color: rgba(52, 73, 94, 0.9);
-            --window-color: #2c3e50;
+            --window-color: rgba(44, 62, 80, 0.85);
         }
 
         .theme-midnight {
@@ -85,7 +86,7 @@
             --bg-color: #1a1a1a;
             --text-color: #ecf0f1;
             --taskbar-color: rgba(155, 89, 182, 0.9);
-            --window-color: #2c3e50;
+            --window-color: rgba(44, 62, 80, 0.85);
         }
 
         .theme-sunrise {
@@ -94,7 +95,7 @@
             --bg-color: #f1c40f;
             --text-color: #2c3e50;
             --taskbar-color: rgba(230, 126, 34, 0.9);
-            --window-color: #f39c12;
+            --window-color: rgba(243, 156, 18, 0.85);
         }
 
         .theme-lavender {
@@ -103,7 +104,7 @@
             --bg-color: #d2b4de;
             --text-color: #2c3e50;
             --taskbar-color: rgba(142, 68, 173, 0.9);
-            --window-color: #e8daef;
+            --window-color: rgba(232, 218, 239, 0.85);
         }
 
         .theme-berry {
@@ -112,7 +113,7 @@
             --bg-color: #fadbd8;
             --text-color: #2c3e50;
             --taskbar-color: rgba(192, 57, 43, 0.9);
-            --window-color: #f5b7b1;
+            --window-color: rgba(245, 183, 177, 0.85);
         }
 
         .theme-graphite {
@@ -121,7 +122,7 @@
             --bg-color: #bdc3c7;
             --text-color: #2c3e50;
             --taskbar-color: rgba(127, 140, 141, 0.9);
-            --window-color: #ecf0f1;
+            --window-color: rgba(236, 240, 241, 0.85);
         }
 
         .theme-slate {
@@ -130,7 +131,7 @@
             --bg-color: #7f8c8d;
             --text-color: #ecf0f1;
             --taskbar-color: rgba(52, 73, 94, 0.9);
-            --window-color: #95a5a6;
+            --window-color: rgba(149, 165, 166, 0.85);
         }
 
         .theme-candy {
@@ -139,7 +140,7 @@
             --bg-color: #feca57;
             --text-color: #2c3e50;
             --taskbar-color: rgba(255, 159, 243, 0.9);
-            --window-color: #ff9ff3;
+            --window-color: rgba(255, 159, 243, 0.85);
         }
 
         .theme-matrix {
@@ -148,7 +149,7 @@
             --bg-color: #0d0208;
             --text-color: #00ff41;
             --taskbar-color: rgba(0, 26, 11, 0.9);
-            --window-color: #0d0208;
+            --window-color: rgba(13, 2, 8, 0.85);
         }
 
         .theme-cyberpunk {
@@ -157,7 +158,7 @@
             --bg-color: #01012b;
             --text-color: #05d9e8;
             --taskbar-color: rgba(1, 1, 43, 0.9);
-            --window-color: #01012b;
+            --window-color: rgba(1, 1, 43, 0.85);
         }
 
         * {
@@ -165,7 +166,7 @@
             padding: 0;
             box-sizing: border-box;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            transition: background-color 0.3s, color 0.3s;
+            transition: all 0.4s ease-in-out;
         }
 
         body {
@@ -177,6 +178,7 @@
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
+            background-attachment: fixed;
         }
 
         #desktop {
@@ -184,46 +186,53 @@
             top: 0;
             left: 0;
             right: 0;
-            bottom: 40px;
+            bottom: 60px;
             display: flex;
             flex-wrap: wrap;
             align-content: flex-start;
-            padding: 10px;
+            padding: 20px;
             overflow: hidden;
             z-index: 1;
+            gap: 15px;
         }
 
         .desktop-icon {
-            width: 80px;
-            height: 90px;
-            margin: 10px;
+            width: 90px;
+            height: 100px;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             cursor: pointer;
             text-align: center;
-            border-radius: 5px;
-            padding: 5px;
+            border-radius: 8px;
+            padding: 8px;
             user-select: none;
-            transition: transform 0.2s;
+            transition: transform 0.3s, background-color 0.3s;
         }
 
         .desktop-icon:hover {
             background-color: rgba(var(--primary-color-rgb), 0.2);
-            transform: scale(1.05);
+            transform: scale(1.1);
+        }
+
+        .desktop-icon:active {
+            transform: scale(0.95);
         }
 
         .desktop-icon img {
-            width: 48px;
-            height: 48px;
-            margin-bottom: 5px;
+            width: 56px;
+            height: 56px;
+            margin-bottom: 8px;
+            object-fit: contain;
         }
 
         .desktop-icon span {
-            font-size: 12px;
+            font-size: 14px;
             color: var(--text-color);
             text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+            word-break: break-word;
+            max-width: 100%;
         }
 
         #taskbar {
@@ -231,27 +240,35 @@
             bottom: 0;
             left: 0;
             right: 0;
-            height: 40px;
+            height: 60px;
             background-color: var(--taskbar-color);
             display: flex;
             align-items: center;
-            padding: 0 10px;
-            z-index: 1000;
-            backdrop-filter: blur(5px);
             justify-content: center;
-            gap: 15px;
+            z-index: 1000;
+            backdrop-filter: blur(var(--blur-amount));
+            -webkit-backdrop-filter: blur(var(--blur-amount));
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .taskbar-icons-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            gap: 10px;
         }
 
         .taskbar-icon {
-            width: 30px;
-            height: 30px;
-            margin: 0 5px;
+            width: 48px;
+            height: 48px;
             cursor: pointer;
             display: flex;
             align-items: center;
             justify-content: center;
-            border-radius: 5px;
-            transition: transform 0.2s;
+            border-radius: 8px;
+            transition: all 0.3s;
+            position: relative;
         }
 
         .taskbar-icon:hover {
@@ -259,30 +276,46 @@
             transform: scale(1.1);
         }
 
+        .taskbar-icon:active {
+            transform: scale(0.95);
+        }
+
+        .taskbar-icon.active {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
         .taskbar-icon img {
-            width: 24px;
-            height: 24px;
+            width: 32px;
+            height: 32px;
         }
 
         #start-button {
             display: flex;
             align-items: center;
             height: 100%;
-            padding: 0 10px;
+            padding: 0 15px;
             cursor: pointer;
             font-weight: bold;
             color: white;
+            transition: all 0.3s;
         }
 
         #start-button:hover {
             background-color: rgba(255, 255, 255, 0.2);
         }
 
+        #start-button:active {
+            transform: scale(0.95);
+        }
+
         #clock {
-            margin-left: auto;
             color: white;
-            padding: 0 10px;
-            font-size: 14px;
+            padding: 0 15px;
+            font-size: 16px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .window {
@@ -290,55 +323,78 @@
             min-width: 300px;
             min-height: 200px;
             background-color: var(--window-color);
-            border-radius: 8px;
-            box-shadow: 0 5px 15px var(--shadow-color);
+            border-radius: 12px;
+            box-shadow: 0 10px 30px var(--shadow-color);
             display: flex;
             flex-direction: column;
             z-index: 10;
             overflow: hidden;
             resize: both;
-            animation: fadeIn 0.3s ease-out;
+            opacity: 0;
+            transform: scale(0.95);
+            transition: opacity 0.3s, transform 0.3s;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(var(--blur-amount));
+            -webkit-backdrop-filter: blur(var(--blur-amount));
+        }
+
+        .window.active {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .window.minimized {
+            opacity: 0;
+            transform: scale(0.9) translateY(20px);
+            pointer-events: none;
         }
 
         .window-header {
-            height: 30px;
+            height: 40px;
             background-color: var(--primary-color);
             color: white;
             display: flex;
             align-items: center;
-            padding: 0 10px;
+            padding: 0 15px;
             cursor: move;
             user-select: none;
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
         }
 
         .window-title {
             flex-grow: 1;
-            font-size: 14px;
+            font-size: 16px;
             font-weight: bold;
         }
 
         .window-controls {
             display: flex;
+            gap: 5px;
         }
 
         .window-control {
-            width: 20px;
-            height: 20px;
-            margin-left: 5px;
+            width: 24px;
+            height: 24px;
             display: flex;
             align-items: center;
             justify-content: center;
-            border-radius: 3px;
+            border-radius: 6px;
             cursor: pointer;
+            transition: background-color 0.2s;
         }
 
         .window-control:hover {
             background-color: rgba(255, 255, 255, 0.3);
         }
 
+        .window-control:active {
+            transform: scale(0.9);
+        }
+
         .window-content {
             flex-grow: 1;
-            padding: 10px;
+            padding: 15px;
             overflow: auto;
         }
 
@@ -346,30 +402,46 @@
             width: 100%;
             height: 100%;
             border: none;
+            background-color: white;
+            border-radius: 0 0 12px 12px;
         }
 
         #start-menu {
             position: absolute;
-            bottom: 40px;
-            left: 10px;
-            width: 300px;
-            height: 400px;
+            bottom: 60px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 500px;
+            max-width: 90%;
+            height: 500px;
             background-color: var(--window-color);
-            border-radius: 8px 8px 0 0;
-            box-shadow: 0 -5px 15px var(--shadow-color);
+            border-radius: 12px 12px 0 0;
+            box-shadow: 0 -10px 30px var(--shadow-color);
             display: none;
             flex-direction: column;
             z-index: 100;
+            backdrop-filter: blur(var(--blur-amount));
+            -webkit-backdrop-filter: blur(var(--blur-amount));
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.3s, transform 0.3s;
+        }
+
+        #start-menu.active {
+            opacity: 1;
+            transform: translateX(-50%) translateY(0);
         }
 
         .start-menu-header {
-            height: 40px;
+            height: 50px;
             background-color: var(--primary-color);
             color: white;
             display: flex;
             align-items: center;
-            padding: 0 15px;
+            padding: 0 20px;
             font-weight: bold;
+            font-size: 18px;
+            border-radius: 12px 12px 0 0;
         }
 
         .start-menu-content {
@@ -379,56 +451,77 @@
         }
 
         .start-menu-sidebar {
-            width: 50px;
+            width: 60px;
             background-color: var(--secondary-color);
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding-top: 10px;
+            padding-top: 15px;
         }
 
         .start-menu-sidebar-icon {
-            width: 40px;
-            height: 40px;
-            margin: 5px 0;
+            width: 48px;
+            height: 48px;
+            margin: 8px 0;
             display: flex;
             align-items: center;
             justify-content: center;
-            border-radius: 5px;
+            border-radius: 8px;
             cursor: pointer;
+            transition: all 0.2s;
         }
 
         .start-menu-sidebar-icon:hover {
             background-color: rgba(255, 255, 255, 0.2);
+            transform: scale(1.1);
+        }
+
+        .start-menu-sidebar-icon:active {
+            transform: scale(0.95);
         }
 
         .start-menu-sidebar-icon img {
-            width: 24px;
-            height: 24px;
+            width: 28px;
+            height: 28px;
         }
 
         .start-menu-apps {
             flex-grow: 1;
-            padding: 10px;
+            padding: 15px;
             overflow-y: auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            gap: 10px;
         }
 
         .start-menu-app {
             display: flex;
+            flex-direction: column;
             align-items: center;
-            padding: 8px;
-            border-radius: 5px;
+            padding: 12px;
+            border-radius: 8px;
             cursor: pointer;
+            transition: all 0.2s;
+            text-align: center;
         }
 
         .start-menu-app:hover {
             background-color: rgba(var(--primary-color-rgb), 0.1);
+            transform: scale(1.05);
+        }
+
+        .start-menu-app:active {
+            transform: scale(0.95);
         }
 
         .start-menu-app img {
-            width: 24px;
-            height: 24px;
-            margin-right: 10px;
+            width: 36px;
+            height: 36px;
+            margin-bottom: 8px;
+        }
+
+        .start-menu-app span {
+            font-size: 14px;
         }
 
         #settings-window {
@@ -437,135 +530,185 @@
 
         .settings-tabs {
             display: flex;
-            border-bottom: 1px solid #ddd;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            padding: 0 15px;
         }
 
         .settings-tab {
-            padding: 10px 15px;
+            padding: 12px 15px;
             cursor: pointer;
-            border-bottom: 2px solid transparent;
+            border-bottom: 3px solid transparent;
+            transition: all 0.2s;
+            font-size: 14px;
+        }
+
+        .settings-tab:hover {
+            background-color: rgba(0, 0, 0, 0.05);
         }
 
         .settings-tab.active {
-            border-bottom: 2px solid var(--primary-color);
+            border-bottom: 3px solid var(--primary-color);
             font-weight: bold;
         }
 
         .settings-content {
             padding: 15px;
+            overflow-y: auto;
+            height: calc(100% - 50px);
         }
 
         .settings-section {
-            margin-bottom: 20px;
+            margin-bottom: 25px;
         }
 
         .settings-section h3 {
-            margin-bottom: 10px;
+            margin-bottom: 15px;
+            color: var(--primary-color);
         }
 
         .theme-selector {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+            gap: 15px;
         }
 
         .theme-option {
-            width: 60px;
-            height: 60px;
-            border-radius: 5px;
+            height: 80px;
+            border-radius: 8px;
             cursor: pointer;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 10px;
+            font-size: 12px;
             font-weight: bold;
             color: white;
             text-shadow: 1px 1px 1px black;
+            transition: transform 0.2s;
+            border: 2px solid transparent;
+        }
+
+        .theme-option:hover {
+            transform: scale(1.05);
+        }
+
+        .theme-option.active {
+            border-color: white;
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
         }
 
         .wallpaper-input {
             display: flex;
-            margin-top: 10px;
+            margin-top: 15px;
+            border-radius: 8px;
+            overflow: hidden;
         }
 
         .wallpaper-input input {
             flex-grow: 1;
-            padding: 8px;
-            border: 1px solid #ddd;
-            border-radius: 4px 0 0 4px;
+            padding: 10px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-right: none;
+            outline: none;
+            background-color: rgba(255, 255, 255, 0.7);
         }
 
         .wallpaper-input button {
-            padding: 8px 15px;
+            padding: 10px 20px;
             background-color: var(--primary-color);
             color: white;
             border: none;
-            border-radius: 0 4px 4px 0;
             cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        .wallpaper-input button:hover {
+            background-color: var(--secondary-color);
         }
 
         .clock-options {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            gap: 15px;
         }
 
         .clock-option {
-            width: 80px;
-            height: 80px;
-            border-radius: 5px;
-            background-color: #f5f5f5;
+            height: 100px;
+            border-radius: 8px;
+            background-color: rgba(0, 0, 0, 0.05);
             display: flex;
             align-items: center;
             justify-content: center;
             cursor: pointer;
             border: 2px solid transparent;
+            transition: all 0.2s;
         }
 
         .clock-option:hover {
-            border-color: var(--primary-color);
+            transform: scale(1.05);
+            background-color: rgba(var(--primary-color-rgb), 0.1);
         }
 
         .clock-option.active {
             border-color: var(--primary-color);
-            background-color: rgba(var(--primary-color-rgb), 0.1);
+            background-color: rgba(var(--primary-color-rgb), 0.2);
+            transform: scale(1.05);
         }
 
         .password-section {
-            margin-top: 20px;
+            margin-top: 25px;
         }
 
         .password-section input {
             width: 100%;
-            padding: 8px;
-            margin-top: 5px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            outline: none;
+            background-color: rgba(255, 255, 255, 0.7);
         }
 
         .password-section button {
-            margin-top: 10px;
-            padding: 8px 15px;
+            margin-top: 15px;
+            padding: 10px 20px;
             background-color: var(--primary-color);
             color: white;
             border: none;
-            border-radius: 4px;
+            border-radius: 8px;
             cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        .password-section button:hover {
+            background-color: var(--secondary-color);
         }
 
         #context-menu {
             position: absolute;
             background-color: var(--window-color);
-            border-radius: 5px;
-            box-shadow: 0 2px 10px var(--shadow-color);
+            border-radius: 8px;
+            box-shadow: 0 5px 20px var(--shadow-color);
             z-index: 1000;
             display: none;
-            min-width: 150px;
+            min-width: 200px;
+            backdrop-filter: blur(var(--blur-amount));
+            -webkit-backdrop-filter: blur(var(--blur-amount));
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            opacity: 0;
+            transform: scale(0.95);
+            transition: opacity 0.2s, transform 0.2s;
+        }
+
+        #context-menu.active {
+            opacity: 1;
+            transform: scale(1);
         }
 
         .context-menu-item {
-            padding: 8px 15px;
+            padding: 12px 20px;
             cursor: pointer;
+            transition: background-color 0.2s;
         }
 
         .context-menu-item:hover {
@@ -574,8 +717,8 @@
 
         .context-menu-separator {
             height: 1px;
-            background-color: #ddd;
-            margin: 3px 0;
+            background-color: rgba(0, 0, 0, 0.1);
+            margin: 5px 0;
         }
 
         #add-app-form {
@@ -585,33 +728,53 @@
             left: 50%;
             transform: translate(-50%, -50%);
             background-color: var(--window-color);
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 5px 15px var(--shadow-color);
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px var(--shadow-color);
             z-index: 1000;
-            width: 300px;
+            width: 400px;
+            max-width: 90%;
+            backdrop-filter: blur(var(--blur-amount));
+            -webkit-backdrop-filter: blur(var(--blur-amount));
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            opacity: 0;
+            transform: translate(-50%, -40%);
+            transition: opacity 0.3s, transform 0.3s;
+        }
+
+        #add-app-form.active {
+            opacity: 1;
+            transform: translate(-50%, -50%);
         }
 
         #add-app-form h3 {
-            margin-bottom: 15px;
+            margin-bottom: 20px;
+            color: var(--primary-color);
         }
 
         #add-app-form input {
             width: 100%;
-            padding: 8px;
-            margin-bottom: 10px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            outline: none;
+            background-color: rgba(255, 255, 255, 0.7);
         }
 
         #add-app-form button {
-            padding: 8px 15px;
+            padding: 10px 20px;
             background-color: var(--primary-color);
             color: white;
             border: none;
-            border-radius: 4px;
+            border-radius: 8px;
             cursor: pointer;
             margin-right: 10px;
+            transition: background-color 0.2s;
+        }
+
+        #add-app-form button:hover {
+            background-color: var(--secondary-color);
         }
 
         #quote-form {
@@ -621,45 +784,74 @@
             left: 50%;
             transform: translate(-50%, -50%);
             background-color: var(--window-color);
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 5px 15px var(--shadow-color);
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px var(--shadow-color);
             z-index: 1000;
-            width: 300px;
+            width: 400px;
+            max-width: 90%;
+            backdrop-filter: blur(var(--blur-amount));
+            -webkit-backdrop-filter: blur(var(--blur-amount));
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            opacity: 0;
+            transform: translate(-50%, -40%);
+            transition: opacity 0.3s, transform 0.3s;
+        }
+
+        #quote-form.active {
+            opacity: 1;
+            transform: translate(-50%, -50%);
         }
 
         #quote-form textarea {
             width: 100%;
-            padding: 8px;
-            margin-bottom: 10px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            height: 100px;
+            padding: 15px;
+            margin-bottom: 15px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            height: 150px;
             resize: none;
+            outline: none;
+            background-color: rgba(255, 255, 255, 0.7);
         }
 
         #quote-form button {
-            padding: 8px 15px;
+            padding: 10px 20px;
             background-color: var(--primary-color);
             color: white;
             border: none;
-            border-radius: 4px;
+            border-radius: 8px;
             cursor: pointer;
             margin-right: 10px;
+            transition: background-color 0.2s;
+        }
+
+        #quote-form button:hover {
+            background-color: var(--secondary-color);
         }
 
         .quote-display {
             position: fixed;
-            bottom: 50px;
+            bottom: 80px;
             right: 20px;
             background-color: rgba(0, 0, 0, 0.7);
             color: white;
-            padding: 10px 15px;
-            border-radius: 5px;
+            padding: 15px 20px;
+            border-radius: 8px;
             max-width: 300px;
             display: none;
             z-index: 1000;
-            animation: fadeIn 0.5s;
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s, transform 0.5s;
+        }
+
+        .quote-display.active {
+            opacity: 1;
+            transform: translateY(0);
         }
 
         /* Анимации */
@@ -678,62 +870,105 @@
             to { opacity: 0; transform: scale(0.9) translateY(20px); }
         }
 
-        /* Для боковой панели задач */
-        body.taskbar-left #taskbar {
-            width: 50px;
-            height: 100vh;
-            flex-direction: column;
-            right: auto;
-            padding: 10px 0;
-        }
-
-        body.taskbar-left #clock {
-            margin-left: 0;
-            margin-top: auto;
-            writing-mode: vertical-rl;
-            transform: rotate(180deg);
-            padding: 10px 0;
-        }
-
-        body.taskbar-left .taskbar-icon {
-            margin: 5px 0;
-        }
-
-        body.taskbar-left #start-button {
-            width: 100%;
-            height: auto;
-            padding: 10px 0;
-            writing-mode: vertical-rl;
-            transform: rotate(180deg);
-        }
-
-        body.taskbar-left #desktop {
-            left: 50px;
-        }
-
-        /* Адаптация для мобильных устройств */
+        /* Для мобильных устройств */
         @media (max-width: 768px) {
+            #desktop {
+                padding: 10px;
+                gap: 10px;
+            }
+            
             .desktop-icon {
-                width: 60px;
-                height: 70px;
-                margin: 5px;
+                width: 70px;
+                height: 80px;
+            }
+            
+            .desktop-icon img {
+                width: 48px;
+                height: 48px;
             }
             
             #taskbar {
                 height: 50px;
-                overflow-x: auto;
+            }
+            
+            .taskbar-icon {
+                width: 40px;
+                height: 40px;
+            }
+            
+            .taskbar-icon img {
+                width: 28px;
+                height: 28px;
+            }
+            
+            #clock {
+                font-size: 14px;
+                padding: 0 10px;
             }
             
             .window {
                 width: 95% !important;
                 height: 80% !important;
                 resize: none;
+                left: 2.5% !important;
+                top: 10% !important;
             }
             
             #start-menu {
-                width: 90%;
+                width: 95%;
                 height: 70%;
             }
+            
+            .start-menu-apps {
+                grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            }
+            
+            .settings-tabs {
+                flex-wrap: wrap;
+            }
+            
+            .settings-tab {
+                padding: 8px 10px;
+                font-size: 12px;
+            }
+            
+            .theme-selector {
+                grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+                gap: 10px;
+            }
+            
+            .theme-option {
+                height: 60px;
+                font-size: 10px;
+            }
+        }
+
+        /* Уведомления */
+        .notification {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            z-index: 10000;
+            opacity: 0;
+            transition: opacity 0.3s;
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            max-width: 90%;
+            text-align: center;
+        }
+        
+        .notification.active {
+            opacity: 1;
+        }
+        
+        .notification.error {
+            background-color: rgba(231, 76, 60, 0.9);
         }
     </style>
 </head>
@@ -791,17 +1026,28 @@
 
     <div id="taskbar">
         <div id="start-button" onclick="toggleStartMenu()">
-            <img src="https://i.postimg.cc/RZXWhkFn/sunburst-logo-pack-clipart-lg.png" alt="Start" style="width: 20px; height: 20px; margin-right: 5px;">
+            <img src="https://i.postimg.cc/RZXWhkFn/sunburst-logo-pack-clipart-lg.png" alt="Start" style="width: 24px; height: 24px; margin-right: 8px;">
             Старт
         </div>
-        <div class="taskbar-icon" onclick="openApp('word')">
-            <img src="https://i.postimg.cc/cLCMhMP2/logos-clipart-lg.png" alt="Word">
-        </div>
-        <div class="taskbar-icon" onclick="openApp('excel')">
-            <img src="https://i.postimg.cc/CLzz6PLG/logo-clipart-lg.png" alt="Excel">
-        </div>
-        <div class="taskbar-icon" onclick="openApp('browser')">
-            <img src="https://cdn-icons-png.flaticon.com/512/2992/2992132.png" alt="Браузер">
+        <div class="taskbar-icons-container">
+            <div class="taskbar-icon" onclick="openApp('word')">
+                <img src="https://i.postimg.cc/cLCMhMP2/logos-clipart-lg.png" alt="Word">
+            </div>
+            <div class="taskbar-icon" onclick="openApp('excel')">
+                <img src="https://i.postimg.cc/CLzz6PLG/logo-clipart-lg.png" alt="Excel">
+            </div>
+            <div class="taskbar-icon" onclick="openApp('powerpoint')">
+                <img src="https://i.postimg.cc/G29DjMZ5/circle-cut-logos-clipart-lg.png" alt="PowerPoint">
+            </div>
+            <div class="taskbar-icon" onclick="openApp('browser')">
+                <img src="https://cdn-icons-png.flaticon.com/512/2992/2992132.png" alt="Браузер">
+            </div>
+            <div class="taskbar-icon" onclick="openApp('music')">
+                <img src="https://cdn-icons-png.flaticon.com/512/3669/3669483.png" alt="Музыка">
+            </div>
+            <div class="taskbar-icon" onclick="openApp('games')">
+                <img src="https://cdn-icons-png.flaticon.com/512/3612/3612569.png" alt="Игры">
+            </div>
         </div>
         <div id="clock"></div>
     </div>
@@ -818,6 +1064,9 @@
                 </div>
                 <div class="start-menu-sidebar-icon" onclick="openApp('terminal')">
                     <img src="https://i.postimg.cc/J7DzmyZJ/logo-design-element-clipart-lg.png" alt="Терминал">
+                </div>
+                <div class="start-menu-sidebar-icon" onclick="openApp('browser')">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2992/2992132.png" alt="Браузер">
                 </div>
             </div>
             <div class="start-menu-apps">
@@ -861,11 +1110,19 @@
                     <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Телеграм">
                     <span>Телеграм</span>
                 </div>
+                <div class="start-menu-app" onclick="openApp('explorer')">
+                    <img src="https://i.postimg.cc/cHWNfH69/carpeta-clipart-lg.png" alt="Проводник">
+                    <span>Проводник</span>
+                </div>
+                <div class="start-menu-app" onclick="openApp('settings')">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2099/2099153.png" alt="Настройки">
+                    <span>Настройки</span>
+                </div>
             </div>
         </div>
     </div>
 
-    <div id="settings-window" class="window" style="width: 600px; height: 400px; display: none;">
+    <div id="settings-window" class="window" style="width: 700px; height: 500px; display: none;">
         <div class="window-header">
             <div class="window-title">Настройки</div>
             <div class="window-controls">
@@ -912,23 +1169,15 @@
                         </div>
                     </div>
                     <div class="settings-section">
-                        <h3>Панель задач</h3>
-                        <div>
-                            <label>
-                                <input type="radio" name="taskbar-position" value="bottom" checked onclick="changeTaskbarPosition('bottom')">
-                                Снизу
-                            </label>
-                            <label>
-                                <input type="radio" name="taskbar-position" value="left" onclick="changeTaskbarPosition('left')">
-                                Слева
-                            </label>
-                        </div>
+                        <h3>Эффект матового стекла</h3>
+                        <input type="range" id="blur-slider" min="0" max="20" value="5" oninput="updateBlurAmount()">
+                        <span id="blur-value">5px</span>
                     </div>
                 </div>
                 <div id="clock-tab" class="settings-tab-content" style="display:none;">
                     <div class="settings-section">
                         <h3>Часовой пояс</h3>
-                        <select id="timezone-select" onchange="updateClock()">
+                        <select id="timezone-select" onchange="updateClock()" style="width:100%;padding:10px;border-radius:8px;border:1px solid rgba(0,0,0,0.1);background-color:rgba(255,255,255,0.7);">
                             <option value="local">Локальное время</option>
                             <option value="UTC">UTC</option>
                             <option value="Europe/Moscow">Москва (UTC+3)</option>
@@ -941,26 +1190,26 @@
                         <h3>Стиль часов</h3>
                         <div class="clock-options">
                             <div class="clock-option active" onclick="changeClockStyle('digital')">
-                                <div id="digital-clock-preview">12:34:56</div>
+                                <div id="digital-clock-preview" style="font-size:18px;">12:34:56</div>
                             </div>
                             <div class="clock-option" onclick="changeClockStyle('analog')">
-                                <div id="analog-clock-preview" style="width: 50px; height: 50px; border: 2px solid black; border-radius: 50%; position: relative;">
-                                    <div style="position: absolute; width: 2px; height: 20px; background: black; left: 50%; top: 5px; transform-origin: bottom center; transform: translateX(-50%) rotate(30deg);"></div>
-                                    <div style="position: absolute; width: 3px; height: 15px; background: black; left: 50%; top: 10px; transform-origin: bottom center; transform: translateX(-50%) rotate(60deg);"></div>
-                                    <div style="position: absolute; width: 1px; height: 25px; background: red; left: 50%; top: 0; transform-origin: bottom center; transform: translateX(-50%) rotate(90deg);"></div>
+                                <div id="analog-clock-preview" style="width: 60px; height: 60px; border: 2px solid black; border-radius: 50%; position: relative;">
+                                    <div style="position: absolute; width: 2px; height: 24px; background: black; left: 50%; top: 6px; transform-origin: bottom center; transform: translateX(-50%) rotate(30deg);"></div>
+                                    <div style="position: absolute; width: 3px; height: 18px; background: black; left: 50%; top: 12px; transform-origin: bottom center; transform: translateX(-50%) rotate(60deg);"></div>
+                                    <div style="position: absolute; width: 1px; height: 30px; background: red; left: 50%; top: 0; transform-origin: bottom center; transform: translateX(-50%) rotate(90deg);"></div>
                                 </div>
                             </div>
                             <div class="clock-option" onclick="changeClockStyle('binary')">
-                                <div style="font-family: monospace;">BINARY</div>
+                                <div style="font-family: monospace; font-size: 14px;">1100:100010:111000</div>
                             </div>
                             <div class="clock-option" onclick="changeClockStyle('roman')">
-                                <div>XII:XXXIV</div>
+                                <div style="font-size: 16px;">XII:XXXIV:LVI</div>
                             </div>
                         </div>
                     </div>
                     <div class="settings-section">
                         <h3>Цвет часов</h3>
-                        <input type="color" id="clock-color" value="#ffffff" onchange="updateClockColor()">
+                        <input type="color" id="clock-color" value="#ffffff" onchange="updateClockColor()" style="width:60px;height:40px;border-radius:8px;border:1px solid rgba(0,0,0,0.1);">
                     </div>
                 </div>
                 <div id="security-tab" class="settings-tab-content" style="display:none;">
@@ -977,7 +1226,7 @@
                 <div id="about-tab" class="settings-tab-content" style="display:none;">
                     <div class="settings-section">
                         <h3>ВебОС</h3>
-                        <p>Версия 1.0</p>
+                        <p>Версия 2.0</p>
                         <p>Это анонимная операционная система, созданная для цифровой свободы и творчества.</p>
                         <p>"Настоящие технологии — это не про гигагерцы и терабайты. Это про мысль, воплощённую в коде."</p>
                         <p>"ВебОС — это не проект. Это принцип. Принцип свободы. Принцип творчества."</p>
@@ -1002,30 +1251,30 @@
         </div>
         <div class="window-content">
             <div style="display: flex; height: 100%;">
-                <div style="width: 200px; border-right: 1px solid #ddd; padding: 10px;">
-                    <div style="padding: 5px; cursor: pointer;" onclick="explorerNavigate('desktop')">
-                        <img src="https://cdn-icons-png.flaticon.com/512/2965/2965288.png" alt="Рабочий стол" style="width: 16px; height: 16px; margin-right: 5px;">
+                <div style="width: 200px; border-right: 1px solid rgba(0,0,0,0.1); padding: 15px;">
+                    <div style="padding: 10px; cursor: pointer; border-radius:8px; transition:background-color 0.2s;" onmouseover="this.style.backgroundColor='rgba(0,0,0,0.05)'" onmouseout="this.style.backgroundColor='transparent'" onclick="explorerNavigate('desktop')">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2965/2965288.png" alt="Рабочий стол" style="width: 20px; height: 20px; margin-right: 10px;">
                         Рабочий стол
                     </div>
-                    <div style="padding: 5px; cursor: pointer;" onclick="explorerNavigate('documents')">
-                        <img src="https://cdn-icons-png.flaticon.com/512/2965/2965300.png" alt="Документы" style="width: 16px; height: 16px; margin-right: 5px;">
+                    <div style="padding: 10px; cursor: pointer; border-radius:8px; transition:background-color 0.2s;" onmouseover="this.style.backgroundColor='rgba(0,0,0,0.05)'" onmouseout="this.style.backgroundColor='transparent'" onclick="explorerNavigate('documents')">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2965/2965300.png" alt="Документы" style="width: 20px; height: 20px; margin-right: 10px;">
                         Документы
                     </div>
-                    <div style="padding: 5px; cursor: pointer;" onclick="explorerNavigate('downloads')">
-                        <img src="https://cdn-icons-png.flaticon.com/512/2965/2965278.png" alt="Загрузки" style="width: 16px; height: 16px; margin-right: 5px;">
+                    <div style="padding: 10px; cursor: pointer; border-radius:8px; transition:background-color 0.2s;" onmouseover="this.style.backgroundColor='rgba(0,0,0,0.05)'" onmouseout="this.style.backgroundColor='transparent'" onclick="explorerNavigate('downloads')">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2965/2965278.png" alt="Загрузки" style="width: 20px; height: 20px; margin-right: 10px;">
                         Загрузки
                     </div>
-                    <div style="padding: 5px; cursor: pointer;" onclick="browseFiles()">
-                        <img src="https://cdn-icons-png.flaticon.com/512/2965/2965288.png" alt="Обзор" style="width: 16px; height: 16px; margin-right: 5px;">
+                    <div style="padding: 10px; cursor: pointer; border-radius:8px; transition:background-color 0.2s;" onmouseover="this.style.backgroundColor='rgba(0,0,0,0.05)'" onmouseout="this.style.backgroundColor='transparent'" onclick="browseFiles()">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2965/2965288.png" alt="Обзор" style="width: 20px; height: 20px; margin-right: 10px;">
                         Обзор файлов
                     </div>
                 </div>
-                <div style="flex-grow: 1; padding: 10px; overflow-y: auto;">
+                <div style="flex-grow: 1; padding: 15px; overflow-y: auto;">
                     <div id="explorer-content"></div>
-                    <div id="file-preview" style="display:none;">
-                        <img id="preview-image" style="max-width:100%; max-height:400px; display:none;">
-                        <video id="preview-video" controls style="max-width:100%; max-height:400px; display:none;"></video>
-                        <pre id="preview-text" style="display:none; white-space: pre-wrap;"></pre>
+                    <div id="file-preview" style="display:none; margin-top:20px;">
+                        <img id="preview-image" style="max-width:100%; max-height:400px; display:none; border-radius:8px; box-shadow:0 5px 15px rgba(0,0,0,0.1);">
+                        <video id="preview-video" controls style="max-width:100%; max-height:400px; display:none; border-radius:8px; box-shadow:0 5px 15px rgba(0,0,0,0.1); background:black;"></video>
+                        <pre id="preview-text" style="display:none; white-space: pre-wrap; background:rgba(0,0,0,0.05); padding:15px; border-radius:8px;"></pre>
                     </div>
                 </div>
             </div>
@@ -1043,6 +1292,72 @@
         <iframe src="https://dasterpro.github.io/terminal/" style="width:100%;height:100%;border:none;"></iframe>
     </div>
 
+    <div id="word-window" class="window" style="width: 800px; height: 600px; display: none;">
+        <div class="window-header">
+            <div class="window-title">Word</div>
+            <div class="window-controls">
+                <div class="window-control" onclick="minimizeWindow('word')">—</div>
+                <div class="window-control" onclick="closeWindow('word')">✕</div>
+            </div>
+        </div>
+        <iframe src="https://dasterpro.github.io/webOSword/" style="width:100%;height:100%;border:none;"></iframe>
+    </div>
+
+    <div id="excel-window" class="window" style="width: 800px; height: 600px; display: none;">
+        <div class="window-header">
+            <div class="window-title">Excel</div>
+            <div class="window-controls">
+                <div class="window-control" onclick="minimizeWindow('excel')">—</div>
+                <div class="window-control" onclick="closeWindow('excel')">✕</div>
+            </div>
+        </div>
+        <iframe src="https://dasterpro.github.io/webOSExcel/" style="width:100%;height:100%;border:none;"></iframe>
+    </div>
+
+    <div id="powerpoint-window" class="window" style="width: 800px; height: 600px; display: none;">
+        <div class="window-header">
+            <div class="window-title">PowerPoint</div>
+            <div class="window-controls">
+                <div class="window-control" onclick="minimizeWindow('powerpoint')">—</div>
+                <div class="window-control" onclick="closeWindow('powerpoint')">✕</div>
+            </div>
+        </div>
+        <iframe src="https://dasterpro.github.io/pow-poi/" style="width:100%;height:100%;border:none;"></iframe>
+    </div>
+
+    <div id="music-window" class="window" style="width: 800px; height: 600px; display: none;">
+        <div class="window-header">
+            <div class="window-title">Музыка</div>
+            <div class="window-controls">
+                <div class="window-control" onclick="minimizeWindow('music')">—</div>
+                <div class="window-control" onclick="closeWindow('music')">✕</div>
+            </div>
+        </div>
+        <iframe src="https://dasterpro.github.io/WEBOSMUS/" style="width:100%;height:100%;border:none;"></iframe>
+    </div>
+
+    <div id="games-window" class="window" style="width: 800px; height: 600px; display: none;">
+        <div class="window-header">
+            <div class="window-title">Игры</div>
+            <div class="window-controls">
+                <div class="window-control" onclick="minimizeWindow('games')">—</div>
+                <div class="window-control" onclick="closeWindow('games')">✕</div>
+            </div>
+        </div>
+        <iframe src="https://dasterpro.github.io/webOSgame/" style="width:100%;height:100%;border:none;"></iframe>
+    </div>
+
+    <div id="browser-window" class="window" style="width: 800px; height: 600px; display: none;">
+        <div class="window-header">
+            <div class="window-title">Браузер</div>
+            <div class="window-controls">
+                <div class="window-control" onclick="minimizeWindow('browser')">—</div>
+                <div class="window-control" onclick="closeWindow('browser')">✕</div>
+            </div>
+        </div>
+        <iframe src="https://us.proxysite.mobi/?url=https://duckduckgo.com" style="width:100%;height:100%;border:none;"></iframe>
+    </div>
+
     <div id="context-menu">
         <div class="context-menu-item" onclick="createFolder()">Создать папку</div>
         <div class="context-menu-item" onclick="showAddAppForm()">Добавить приложение</div>
@@ -1055,7 +1370,7 @@
         <input type="text" id="app-name" placeholder="Название приложения">
         <input type="text" id="app-url" placeholder="URL приложения">
         <input type="text" id="app-icon" placeholder="URL иконки">
-        <div style="display: flex; margin-top: 10px;">
+        <div style="display: flex; margin-top: 15px;">
             <button onclick="addApp()">Добавить</button>
             <button onclick="hideAddAppForm()">Отмена</button>
         </div>
@@ -1064,7 +1379,7 @@
     <div id="quote-form">
         <h3>Добавить цитату</h3>
         <textarea id="quote-text" placeholder="Введите вашу цитату"></textarea>
-        <div style="display: flex; margin-top: 10px;">
+        <div style="display: flex; margin-top: 15px;">
             <button onclick="addQuote()">Добавить</button>
             <button onclick="hideQuoteForm()">Отмена</button>
         </div>
@@ -1092,6 +1407,7 @@
             "ВебОС — это не альтернатива. Это революция."
         ];
         let currentQuoteIndex = 0;
+        let blurAmount = 5;
 
         // Инициализация при загрузке
         window.onload = function() {
@@ -1099,6 +1415,9 @@
             setInterval(updateClock, 1000);
             loadSettings();
             setupIconDragAndDrop();
+            
+            // Показываем случайную цитату через 5 секунд после загрузки
+            setTimeout(showRandomQuote, 5000);
             
             // Обработчик для тройного пробела
             let spaceCount = 0;
@@ -1137,14 +1456,23 @@
             };
 
             // Приложения, которые должны открываться внутри WebOS
-            const internalApps = ['word', 'excel', 'powerpoint', 'music', 'games', 'browser', 'terminal'];
+            const internalApps = ['word', 'excel', 'powerpoint', 'music', 'games', 'browser', 'terminal', 'explorer', 'settings'];
             
             if (internalApps.includes(app)) {
+                // Если окно уже существует, просто откроем его
+                if (openWindows[app]) {
+                    const windowElement = document.getElementById(app + '-window');
+                    windowElement.style.display = 'block';
+                    windowElement.classList.add('active');
+                    windowElement.style.zIndex = getHighestZIndex() + 1;
+                    
+                    // Обновляем активный статус иконки в панели задач
+                    updateTaskbarIconActiveStatus(app, true);
+                    return;
+                }
+                
+                // Создаем окно, если его нет
                 createAppWindow(app, appUrls[app]);
-            } else if (app === 'explorer') {
-                openWindow('explorer');
-            } else if (app === 'settings') {
-                openWindow('settings');
             } else {
                 window.open(appUrls[app], '_blank');
             }
@@ -1153,57 +1481,74 @@
         function createAppWindow(appId, url) {
             // Если окно уже существует, просто откроем его
             if (openWindows[appId]) {
-                document.getElementById(appId + '-window').style.display = 'block';
-                document.getElementById(appId + '-window').style.zIndex = getHighestZIndex() + 1;
+                const windowElement = document.getElementById(appId + '-window');
+                windowElement.style.display = 'block';
+                windowElement.classList.add('active');
+                windowElement.style.zIndex = getHighestZIndex() + 1;
                 return;
             }
 
-            // Создаем HTML для нового окна
-            const windowHtml = `
-                <div id="${appId}-window" class="window" style="width: 800px; height: 600px; display: none;">
-                    <div class="window-header">
-                        <div class="window-title">${appId.charAt(0).toUpperCase() + appId.slice(1)}</div>
-                        <div class="window-controls">
-                            <div class="window-control" onclick="minimizeWindow('${appId}')">—</div>
-                            <div class="window-control" onclick="closeWindow('${appId}')">✕</div>
+            // Создаем HTML для нового окна, если его нет
+            if (!document.getElementById(appId + '-window')) {
+                let windowHtml = '';
+                
+                if (appId === 'explorer' || appId === 'settings') {
+                    // Эти окна уже есть в HTML
+                    openWindow(appId);
+                    return;
+                } else {
+                    windowHtml = `
+                        <div id="${appId}-window" class="window" style="width: 800px; height: 600px; display: none;">
+                            <div class="window-header">
+                                <div class="window-title">${appId.charAt(0).toUpperCase() + appId.slice(1)}</div>
+                                <div class="window-controls">
+                                    <div class="window-control" onclick="minimizeWindow('${appId}')">—</div>
+                                    <div class="window-control" onclick="closeWindow('${appId}')">✕</div>
+                                </div>
+                            </div>
+                            <div class="window-content">
+                                <iframe src="${url}" style="width:100%;height:100%;border:none;"></iframe>
+                            </div>
                         </div>
-                    </div>
-                    <div class="window-content">
-                        <iframe src="${url}" style="width:100%;height:100%;border:none;"></iframe>
-                    </div>
-                </div>
-            `;
+                    `;
 
-            // Добавляем окно в DOM
-            document.body.insertAdjacentHTML('beforeend', windowHtml);
+                    // Добавляем окно в DOM
+                    document.body.insertAdjacentHTML('beforeend', windowHtml);
+                }
+            }
             
             // Делаем окно перемещаемым
             makeWindowDraggable(appId + '-window');
             
             // Открываем окно
             openWindow(appId);
+            
+            // Обновляем активный статус иконки в панели задач
+            updateTaskbarIconActiveStatus(appId, true);
         }
 
         function openWindow(windowId) {
             const windowElement = document.getElementById(windowId + '-window');
             if (windowElement) {
                 windowElement.style.display = 'block';
+                setTimeout(() => {
+                    windowElement.classList.add('active');
+                }, 10);
                 windowElement.style.zIndex = getHighestZIndex() + 1;
                 openWindows[windowId] = true;
-                
-                // Анимация открытия
-                windowElement.style.animation = 'fadeIn 0.3s';
             }
         }
 
         function closeWindow(windowId) {
             const windowElement = document.getElementById(windowId + '-window');
             if (windowElement) {
-                // Анимация закрытия
-                windowElement.style.animation = 'fadeOut 0.3s';
+                windowElement.classList.remove('active');
                 setTimeout(() => {
                     windowElement.style.display = 'none';
                     openWindows[windowId] = false;
+                    
+                    // Обновляем активный статус иконки в панели задач
+                    updateTaskbarIconActiveStatus(windowId, false);
                 }, 300);
             }
         }
@@ -1211,19 +1556,38 @@
         function minimizeWindow(windowId) {
             const windowElement = document.getElementById(windowId + '-window');
             if (windowElement) {
-                // Анимация минимизации
-                windowElement.style.animation = 'minimize 0.3s';
+                windowElement.classList.remove('active');
+                windowElement.classList.add('minimized');
                 setTimeout(() => {
                     windowElement.style.display = 'none';
+                    openWindows[windowId] = false;
+                    
+                    // Обновляем активный статус иконки в панели задач
+                    updateTaskbarIconActiveStatus(windowId, false);
                 }, 300);
             }
+        }
+
+        function updateTaskbarIconActiveStatus(appId, isActive) {
+            const taskbarIcons = document.querySelectorAll('.taskbar-icon');
+            taskbarIcons.forEach(icon => {
+                if (icon.onclick && icon.onclick.toString().includes(`'${appId}'`)) {
+                    if (isActive) {
+                        icon.classList.add('active');
+                    } else {
+                        icon.classList.remove('active');
+                    }
+                }
+            });
         }
 
         function getHighestZIndex() {
             let highest = 10;
             document.querySelectorAll('.window').forEach(window => {
-                let zIndex = parseInt(window.style.zIndex || 0);
-                if (zIndex > highest) highest = zIndex;
+                if (window.style.display !== 'none') {
+                    let zIndex = parseInt(window.style.zIndex || 0);
+                    if (zIndex > highest) highest = zIndex;
+                }
             });
             return highest;
         }
@@ -1233,30 +1597,37 @@
             const header = window.querySelector('.window-header');
             
             let pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+            let isDragging = false;
             
             header.onmousedown = dragMouseDown;
             
             function dragMouseDown(e) {
                 e = e || window.event;
                 e.preventDefault();
+                
                 // get the mouse cursor position at startup:
                 pos3 = e.clientX;
                 pos4 = e.clientY;
                 document.onmouseup = closeDragElement;
-                // call a function whenever the cursor moves:
                 document.onmousemove = elementDrag;
+                
                 // bring to front
                 window.style.zIndex = getHighestZIndex() + 1;
+                isDragging = true;
             }
             
             function elementDrag(e) {
+                if (!isDragging) return;
+                
                 e = e || window.event;
                 e.preventDefault();
+                
                 // calculate the new cursor position:
                 pos1 = pos3 - e.clientX;
                 pos2 = pos4 - e.clientY;
                 pos3 = e.clientX;
                 pos4 = e.clientY;
+                
                 // set the element's new position:
                 window.style.top = (window.offsetTop - pos2) + "px";
                 window.style.left = (window.offsetLeft - pos1) + "px";
@@ -1266,16 +1637,23 @@
                 // stop moving when mouse button is released:
                 document.onmouseup = null;
                 document.onmousemove = null;
+                isDragging = false;
             }
         }
 
         // Функции для работы с меню
         function toggleStartMenu() {
             const startMenu = document.getElementById('start-menu');
-            if (startMenu.style.display === 'flex') {
-                startMenu.style.display = 'none';
+            if (startMenu.classList.contains('active')) {
+                startMenu.classList.remove('active');
+                setTimeout(() => {
+                    startMenu.style.display = 'none';
+                }, 300);
             } else {
                 startMenu.style.display = 'flex';
+                setTimeout(() => {
+                    startMenu.classList.add('active');
+                }, 10);
                 startMenu.style.zIndex = getHighestZIndex() + 1;
             }
         }
@@ -1316,10 +1694,11 @@
         }
 
         function toRoman(num) {
-            // Простая реализация для демонстрации
             if (num === 0) return '0';
-            const roman = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X'];
-            return num <= 10 ? roman[num - 1] : num.toString();
+            const roman = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 
+                           'XI', 'XII', 'XIII', 'XIV', 'XV', 'XVI', 'XVII', 'XVIII', 'XIX', 'XX',
+                           'XXI', 'XXII', 'XXIII', 'XXIV'];
+            return num <= 23 ? roman[num] : num.toString();
         }
 
         // Функции для работы с настройками
@@ -1339,6 +1718,7 @@
             document.body.className = `theme-${theme}`;
             currentTheme = theme;
             saveSettings();
+            showNotification(`Тема изменена на ${theme}`);
         }
 
         function setWallpaper() {
@@ -1350,13 +1730,11 @@
             }
         }
 
-        function changeTaskbarPosition(position) {
-            if (position === 'left') {
-                document.body.classList.add('taskbar-left');
-            } else {
-                document.body.classList.remove('taskbar-left');
-            }
-            localStorage.setItem('taskbarPosition', position);
+        function updateBlurAmount() {
+            blurAmount = document.getElementById('blur-slider').value;
+            document.documentElement.style.setProperty('--blur-amount', blurAmount + 'px');
+            document.getElementById('blur-value').textContent = blurAmount + 'px';
+            saveSettings();
         }
 
         function changeClockStyle(style) {
@@ -1367,6 +1745,7 @@
             event.target.closest('.clock-option').classList.add('active');
             saveSettings();
             updateClock();
+            showNotification(`Стиль часов изменен на ${style}`);
         }
 
         function updateClockColor() {
@@ -1404,43 +1783,43 @@
             
             if (location === 'desktop') {
                 content = `
-                    <div style="display: flex; flex-wrap: wrap;">
-                        <div style="width: 100px; margin: 10px; text-align: center;">
-                            <img src="https://i.postimg.cc/cLCMhMP2/logos-clipart-lg.png" alt="Word" style="width: 48px; height: 48px;">
+                    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 15px;">
+                        <div style="padding: 15px; border-radius:8px; transition:background-color 0.2s; cursor:pointer;" onmouseover="this.style.backgroundColor='rgba(0,0,0,0.05)'" onmouseout="this.style.backgroundColor='transparent'" onclick="openApp('word')">
+                            <img src="https://i.postimg.cc/cLCMhMP2/logos-clipart-lg.png" alt="Word" style="width: 48px; height: 48px; margin-bottom:8px;">
                             <div>Word</div>
                         </div>
-                        <div style="width: 100px; margin: 10px; text-align: center;">
-                            <img src="https://i.postimg.cc/CLzz6PLG/logo-clipart-lg.png" alt="Excel" style="width: 48px; height: 48px;">
+                        <div style="padding: 15px; border-radius:8px; transition:background-color 0.2s; cursor:pointer;" onmouseover="this.style.backgroundColor='rgba(0,0,0,0.05)'" onmouseout="this.style.backgroundColor='transparent'" onclick="openApp('excel')">
+                            <img src="https://i.postimg.cc/CLzz6PLG/logo-clipart-lg.png" alt="Excel" style="width: 48px; height: 48px; margin-bottom:8px;">
                             <div>Excel</div>
                         </div>
-                        <div style="width: 100px; margin: 10px; text-align: center;">
-                            <img src="https://i.postimg.cc/G29DjMZ5/circle-cut-logos-clipart-lg.png" alt="PowerPoint" style="width: 48px; height: 48px;">
+                        <div style="padding: 15px; border-radius:8px; transition:background-color 0.2s; cursor:pointer;" onmouseover="this.style.backgroundColor='rgba(0,0,0,0.05)'" onmouseout="this.style.backgroundColor='transparent'" onclick="openApp('powerpoint')">
+                            <img src="https://i.postimg.cc/G29DjMZ5/circle-cut-logos-clipart-lg.png" alt="PowerPoint" style="width: 48px; height: 48px; margin-bottom:8px;">
                             <div>PowerPoint</div>
                         </div>
-                        <div style="width: 100px; margin: 10px; text-align: center;">
-                            <img src="https://cdn-icons-png.flaticon.com/512/3669/3669483.png" alt="Музыка" style="width: 48px; height: 48px;">
+                        <div style="padding: 15px; border-radius:8px; transition:background-color 0.2s; cursor:pointer;" onmouseover="this.style.backgroundColor='rgba(0,0,0,0.05)'" onmouseout="this.style.backgroundColor='transparent'" onclick="openApp('music')">
+                            <img src="https://cdn-icons-png.flaticon.com/512/3669/3669483.png" alt="Музыка" style="width: 48px; height: 48px; margin-bottom:8px;">
                             <div>Музыка</div>
                         </div>
                     </div>
                 `;
             } else if (location === 'documents') {
                 content = `
-                    <div style="display: flex; flex-wrap: wrap;">
-                        <div style="width: 100px; margin: 10px; text-align: center;">
-                            <img src="https://cdn-icons-png.flaticon.com/512/136/136522.png" alt="Документ" style="width: 48px; height: 48px;">
+                    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 15px;">
+                        <div style="padding: 15px; border-radius:8px; transition:background-color 0.2s; cursor:pointer;" onmouseover="this.style.backgroundColor='rgba(0,0,0,0.05)'" onmouseout="this.style.backgroundColor='transparent'" onclick="previewFile('document')">
+                            <img src="https://cdn-icons-png.flaticon.com/512/136/136522.png" alt="Документ" style="width: 48px; height: 48px; margin-bottom:8px;">
                             <div>Мой документ.txt</div>
                         </div>
-                        <div style="width: 100px; margin: 10px; text-align: center;">
-                            <img src="https://cdn-icons-png.flaticon.com/512/281/281760.png" alt="Таблица" style="width: 48px; height: 48px;">
+                        <div style="padding: 15px; border-radius:8px; transition:background-color 0.2s; cursor:pointer;" onmouseover="this.style.backgroundColor='rgba(0,0,0,0.05)'" onmouseout="this.style.backgroundColor='transparent'" onclick="previewFile('spreadsheet')">
+                            <img src="https://cdn-icons-png.flaticon.com/512/281/281760.png" alt="Таблица" style="width: 48px; height: 48px; margin-bottom:8px;">
                             <div>Бюджет.xlsx</div>
                         </div>
                     </div>
                 `;
             } else if (location === 'downloads') {
                 content = `
-                    <div style="display: flex; flex-wrap: wrap;">
-                        <div style="width: 100px; margin: 10px; text-align: center;">
-                            <img src="https://cdn-icons-png.flaticon.com/512/2965/2965879.png" alt="Архив" style="width: 48px; height: 48px;">
+                    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 15px;">
+                        <div style="padding: 15px; border-radius:8px; transition:background-color 0.2s; cursor:pointer;" onmouseover="this.style.backgroundColor='rgba(0,0,0,0.05)'" onmouseout="this.style.backgroundColor='transparent'" onclick="previewFile('archive')">
+                            <img src="https://cdn-icons-png.flaticon.com/512/2965/2965879.png" alt="Архив" style="width: 48px; height: 48px; margin-bottom:8px;">
                             <div>Архив.zip</div>
                         </div>
                     </div>
@@ -1449,6 +1828,43 @@
             
             document.getElementById('explorer-content').innerHTML = content;
             document.getElementById('file-preview').style.display = 'none';
+        }
+
+        function previewFile(type) {
+            const preview = document.getElementById('file-preview');
+            const explorerContent = document.getElementById('explorer-content');
+            
+            explorerContent.innerHTML = `
+                <div style="margin-bottom: 20px;">
+                    <strong>Выбранный файл:</strong> ${type === 'document' ? 'Мой документ.txt' : 
+                                                     type === 'spreadsheet' ? 'Бюджет.xlsx' : 'Архив.zip'}
+                    <div><small>Тип: ${type === 'document' ? 'Текстовый документ' : 
+                                          type === 'spreadsheet' ? 'Электронная таблица' : 'Архив'}</small></div>
+                    <div><small>Размер: ${type === 'document' ? '12.5 KB' : 
+                                         type === 'spreadsheet' ? '45.2 KB' : '3.7 MB'}</small></div>
+                </div>
+            `;
+            
+            preview.style.display = 'block';
+            
+            // Сброс предыдущих превью
+            document.getElementById('preview-image').style.display = 'none';
+            document.getElementById('preview-video').style.display = 'none';
+            document.getElementById('preview-text').style.display = 'none';
+            
+            if (type === 'document') {
+                const text = document.getElementById('preview-text');
+                text.textContent = "Это пример текстового файла.\nВы можете просматривать текстовые файлы в проводнике.\n\nСодержимое файла:\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nisl eget ultricies tincidunt, nisl nisl aliquam nisl, eget ultricies nisl nisl eget nisl.";
+                text.style.display = 'block';
+            } else if (type === 'spreadsheet') {
+                const img = document.getElementById('preview-image');
+                img.src = 'https://cdn-icons-png.flaticon.com/512/281/281760.png';
+                img.style.display = 'block';
+            } else if (type === 'archive') {
+                const img = document.getElementById('preview-image');
+                img.src = 'https://cdn-icons-png.flaticon.com/512/2965/2965879.png';
+                img.style.display = 'block';
+            }
         }
 
         function browseFiles() {
@@ -1463,7 +1879,7 @@
                 const explorerContent = document.getElementById('explorer-content');
                 
                 explorerContent.innerHTML = `
-                    <div style="margin-bottom: 15px;">
+                    <div style="margin-bottom: 20px;">
                         <strong>Выбранный файл:</strong> ${file.name}
                         <div><small>Тип: ${file.type || 'неизвестно'}</small></div>
                         <div><small>Размер: ${(file.size / 1024).toFixed(2)} KB</small></div>
@@ -1501,6 +1917,10 @@
                         text.style.display = 'block';
                     };
                     reader.readAsText(file);
+                } else {
+                    const img = document.getElementById('preview-image');
+                    img.src = 'https://cdn-icons-png.flaticon.com/512/2965/2965300.png';
+                    img.style.display = 'block';
                 }
             }
         });
@@ -1512,24 +1932,33 @@
                 const quoteDisplay = document.getElementById('quote-display');
                 quoteDisplay.textContent = `"${quotes[currentQuoteIndex]}"`;
                 quoteDisplay.style.display = 'block';
-                quoteDisplay.style.animation = 'fadeIn 0.5s';
                 setTimeout(() => {
-                    quoteDisplay.style.animation = 'fadeOut 0.5s';
+                    quoteDisplay.classList.add('active');
+                }, 10);
+                
+                setTimeout(() => {
+                    quoteDisplay.classList.remove('active');
                     setTimeout(() => {
                         quoteDisplay.style.display = 'none';
                     }, 500);
-                }, 5000);
+                }, 8000);
             }
         }
 
         function showAddQuoteForm() {
             document.getElementById('quote-text').value = '';
             document.getElementById('quote-form').style.display = 'block';
+            setTimeout(() => {
+                document.getElementById('quote-form').classList.add('active');
+            }, 10);
             document.getElementById('quote-text').focus();
         }
 
         function hideQuoteForm() {
-            document.getElementById('quote-form').style.display = 'none';
+            document.getElementById('quote-form').classList.remove('active');
+            setTimeout(() => {
+                document.getElementById('quote-form').style.display = 'none';
+            }, 300);
         }
 
         function addQuote() {
@@ -1545,12 +1974,18 @@
         // Функции для работы с приложениями
         function showAddAppForm() {
             document.getElementById('add-app-form').style.display = 'block';
+            setTimeout(() => {
+                document.getElementById('add-app-form').classList.add('active');
+            }, 10);
             hideContextMenu();
             document.getElementById('app-name').focus();
         }
 
         function hideAddAppForm() {
-            document.getElementById('add-app-form').style.display = 'none';
+            document.getElementById('add-app-form').classList.remove('active');
+            setTimeout(() => {
+                document.getElementById('add-app-form').style.display = 'none';
+            }, 300);
         }
 
         function addApp() {
@@ -1624,9 +2059,13 @@
                 
                 const contextMenu = document.getElementById('context-menu');
                 contextMenu.style.display = 'block';
-                contextMenu.style.left = e.pageX + 'px';
-                contextMenu.style.top = e.pageY + 'px';
+                contextMenu.style.left = Math.min(e.pageX, window.innerWidth - 220) + 'px';
+                contextMenu.style.top = Math.min(e.pageY, window.innerHeight - 160) + 'px';
                 contextMenu.style.zIndex = getHighestZIndex() + 1;
+                
+                setTimeout(() => {
+                    contextMenu.classList.add('active');
+                }, 10);
             }
         });
 
@@ -1635,7 +2074,13 @@
         });
 
         function hideContextMenu() {
-            document.getElementById('context-menu').style.display = 'none';
+            const contextMenu = document.getElementById('context-menu');
+            if (contextMenu) {
+                contextMenu.classList.remove('active');
+                setTimeout(() => {
+                    contextMenu.style.display = 'none';
+                }, 300);
+            }
         }
 
         function createFolder() {
@@ -1664,7 +2109,11 @@
             document.body.appendChild(notification);
             
             setTimeout(() => {
-                notification.style.opacity = '0';
+                notification.classList.add('active');
+            }, 10);
+            
+            setTimeout(() => {
+                notification.classList.remove('active');
                 setTimeout(() => {
                     document.body.removeChild(notification);
                 }, 300);
@@ -1680,7 +2129,8 @@
                 clockColor,
                 password: systemPassword,
                 quotes,
-                wallpaper: document.body.style.backgroundImage
+                wallpaper: document.body.style.backgroundImage,
+                blurAmount
             };
             localStorage.setItem('webOSSettings', JSON.stringify(settings));
         }
@@ -1693,7 +2143,8 @@
                 }
                 if (settings.clockStyle) {
                     clockStyle = settings.clockStyle;
-                    document.querySelector(`.clock-option[onclick="changeClockStyle('${settings.clockStyle}')"]`).classList.add('active');
+                    const clockOption = document.querySelector(`.clock-option[onclick*="changeClockStyle('${settings.clockStyle}')"]`);
+                    if (clockOption) clockOption.classList.add('active');
                 }
                 if (settings.timezone) {
                     timezone = settings.timezone;
@@ -1713,12 +2164,12 @@
                 if (settings.wallpaper) {
                     document.body.style.backgroundImage = settings.wallpaper;
                 }
-            }
-            
-            const taskbarPosition = localStorage.getItem('taskbarPosition');
-            if (taskbarPosition === 'left') {
-                changeTaskbarPosition('left');
-                document.querySelector('input[name="taskbar-position"][value="left"]').checked = true;
+                if (settings.blurAmount) {
+                    blurAmount = settings.blurAmount;
+                    document.documentElement.style.setProperty('--blur-amount', blurAmount + 'px');
+                    document.getElementById('blur-slider').value = blurAmount;
+                    document.getElementById('blur-value').textContent = blurAmount + 'px';
+                }
             }
             
             loadAppsFromStorage();
@@ -1762,7 +2213,7 @@
             
             desktop.addEventListener('dragover', function(e) {
                 e.preventDefault();
-                const afterElement = getDragAfterElement(desktop, e.clientY);
+                const afterElement = getDragAfterElement(desktop, e.clientX, e.clientY);
                 if (afterElement) {
                     desktop.insertBefore(draggedIcon, afterElement);
                 } else {
@@ -1771,42 +2222,22 @@
             });
         }
 
-        function getDragAfterElement(container, y) {
+        function getDragAfterElement(container, x, y) {
             const draggableElements = [...container.querySelectorAll('.desktop-icon:not(.dragging)')];
             
             return draggableElements.reduce((closest, child) => {
                 const box = child.getBoundingClientRect();
-                const offset = y - box.top - box.height / 2;
+                const offsetX = x - box.left - box.width / 2;
+                const offsetY = y - box.top - box.height / 2;
+                const distance = Math.sqrt(offsetX * offsetX + offsetY * offsetY);
                 
-                if (offset < 0 && offset > closest.offset) {
-                    return { offset: offset, element: child };
+                if (distance < 100 && distance < closest.distance) {
+                    return { distance: distance, element: child };
                 } else {
                     return closest;
                 }
-            }, { offset: Number.NEGATIVE_INFINITY }).element;
+            }, { distance: Number.POSITIVE_INFINITY }).element;
         }
-
-        // Стили для уведомлений
-        const notificationStyle = document.createElement('style');
-        notificationStyle.textContent = `
-            .notification {
-                position: fixed;
-                bottom: 20px;
-                left: 50%;
-                transform: translateX(-50%);
-                background-color: rgba(0, 0, 0, 0.8);
-                color: white;
-                padding: 10px 20px;
-                border-radius: 5px;
-                z-index: 10000;
-                transition: opacity 0.3s;
-            }
-            
-            .notification.error {
-                background-color: rgba(231, 76, 60, 0.9);
-            }
-        `;
-        document.head.appendChild(notificationStyle);
     </script>
 </body>
 </html>
